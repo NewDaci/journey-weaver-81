@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Mail, MapPin, Plane } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import fitoorLogo from "@/assets/fitoor-logo.png";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -60,20 +61,16 @@ export const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2">
-              <div className={cn(
-                "w-10 h-10 rounded-xl flex items-center justify-center transition-colors",
-                isScrolled ? "bg-primary" : "bg-foreground/10 backdrop-blur-sm"
-              )}>
-                <Plane className={cn(
-                  "w-5 h-5",
-                  isScrolled ? "text-primary-foreground" : "text-foreground"
-                )} />
-              </div>
+              <img 
+                src={fitoorLogo} 
+                alt="Fitoor Logo" 
+                className="h-12 w-auto"
+              />
               <span className={cn(
                 "font-display text-2xl font-bold transition-colors",
                 isScrolled ? "text-foreground" : "text-foreground"
               )}>
-                Wanderlust
+                Fitoor
               </span>
             </Link>
 

@@ -124,25 +124,25 @@ export const Footer = () => {
                 <li className="flex items-start gap-3">
                   <MapPin size={20} className="text-primary mt-1 shrink-0" />
                   <span className="text-primary-foreground/70">
-                    123 Travel Street, Adventure City, TC 12345
+                    Your Gateway to the World
                   </span>
                 </li>
                 <li>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+919580150731"
                     className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors"
                   >
                     <Phone size={20} className="text-primary shrink-0" />
-                    <span>+1 (234) 567-890</span>
+                    <span>+91 9580150731</span>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="mailto:info@wanderlust.com"
+                    href="mailto:pratisthagupta@fitoor.world"
                     className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary transition-colors"
                   >
                     <Mail size={20} className="text-primary shrink-0" />
-                    <span>info@wanderlust.com</span>
+                    <span>pratisthagupta@fitoor.world</span>
                   </a>
                 </li>
               </ul>

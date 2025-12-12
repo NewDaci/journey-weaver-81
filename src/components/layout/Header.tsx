@@ -31,18 +31,18 @@ export const Header = () => {
       <div className="hidden lg:block bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+919580150731" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone size={14} />
-              <span>+1 (234) 567-890</span>
+              <span>+91 9580150731</span>
             </a>
-            <a href="mailto:info@wanderlust.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:pratisthagupta@fitoor.world" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail size={14} />
-              <span>info@wanderlust.com</span>
+              <span>pratisthagupta@fitoor.world</span>
             </a>
           </div>
           <div className="flex items-center gap-2">
             <MapPin size={14} />
-            <span>123 Travel Street, Adventure City</span>
+            <span>Your Gateway to the World</span>
           </div>
         </div>
       </div>

@@ -62,16 +62,16 @@ export const Header = () => {
             <Link to="/" className="flex items-center gap-2">
               <div className={cn(
                 "w-10 h-10 rounded-xl flex items-center justify-center transition-colors",
-                isScrolled ? "bg-primary" : "bg-primary-foreground/10 backdrop-blur-sm"
+                isScrolled ? "bg-primary" : "bg-foreground/10 backdrop-blur-sm"
               )}>
                 <Plane className={cn(
                   "w-5 h-5",
-                  isScrolled ? "text-primary-foreground" : "text-primary-foreground"
+                  isScrolled ? "text-primary-foreground" : "text-foreground"
                 )} />
               </div>
               <span className={cn(
                 "font-display text-2xl font-bold transition-colors",
-                isScrolled ? "text-foreground" : "text-primary-foreground"
+                isScrolled ? "text-foreground" : "text-foreground"
               )}>
                 Wanderlust
               </span>
@@ -85,7 +85,7 @@ export const Header = () => {
                   href={link.href}
                   className={cn(
                     "font-medium transition-colors hover:text-primary",
-                    isScrolled ? "text-foreground" : "text-primary-foreground"
+                    isScrolled ? "text-foreground" : "text-foreground"
                   )}
                 >
                   {link.name}
@@ -106,9 +106,9 @@ export const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className={cn("w-6 h-6", isScrolled ? "text-foreground" : "text-primary-foreground")} />
+                <X className={cn("w-6 h-6", isScrolled ? "text-foreground" : "text-foreground")} />
               ) : (
-                <Menu className={cn("w-6 h-6", isScrolled ? "text-foreground" : "text-primary-foreground")} />
+                <Menu className={cn("w-6 h-6", isScrolled ? "text-foreground" : "text-foreground")} />
               )}
             </button>
           </div>

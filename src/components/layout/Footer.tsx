@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Plane, Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import fitoorLogo from "@/assets/fitoor-logo.png";
 
 const quickLinks = [
   { name: "About Us", href: "#about" },
@@ -62,10 +63,12 @@ export const Footer = () => {
             {/* Brand */}
             <div>
               <Link to="/" className="flex items-center gap-2 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-                  <Plane className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <span className="font-display text-2xl font-bold">Wanderlust</span>
+                <img 
+                  src={fitoorLogo} 
+                  alt="Fitoor Logo" 
+                  className="h-12 w-auto"
+                />
+                <span className="font-display text-2xl font-bold">Fitoor</span>
               </Link>
               <p className="text-primary-foreground/70 mb-6">
                 Your trusted travel partner for unforgettable adventures around the world. Creating memories since 2010.
@@ -154,7 +157,7 @@ export const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Wanderlust Tours & Travels. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Fitoor. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
